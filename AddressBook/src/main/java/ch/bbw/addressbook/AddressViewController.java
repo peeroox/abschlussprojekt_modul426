@@ -34,6 +34,7 @@ public class AddressViewController {
         message = "The address was saved successfully.";
         clearFields();
     }
+    
     public List<Address> getAddresses() {
         return addressService.getAllAddresses();
     }

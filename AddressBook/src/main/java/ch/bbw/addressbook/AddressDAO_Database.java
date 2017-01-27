@@ -28,7 +28,7 @@ public class AddressDAO_Database implements AddressDAO {
 	private void init() {
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
-			connection = DriverManager.getConnection("jdbc:mysql://localhost/addressbook","root","");
+			connection = DriverManager.getConnection("jdbc:mysql://localhost/addressbook","root","drmicfcz123");
 		} catch (SQLException e) {
 			e.printStackTrace();
 		} catch (ClassNotFoundException e) {
@@ -117,5 +117,13 @@ public class AddressDAO_Database implements AddressDAO {
 	public void delete(int id) {
 		// TODO: delete, not implemented yet
 	}
+	
+	
+//	public static void main(String[] args) {
+//		AddressDAO_Database dao_Database = new AddressDAO_Database();
+//		dao_Database.init();
+//		dao_Database.readAll().forEach(a -> System.out.println(a.getFirstname()));
+//		dao_Database.destroy();
+//	}
 
 }
