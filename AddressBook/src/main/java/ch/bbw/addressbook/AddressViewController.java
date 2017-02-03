@@ -12,7 +12,7 @@ public class AddressViewController {
 	
 	@Inject
 	private AddressService addressService;
-	
+	private int id;
     private String firstname;
     private String lastname;
     private String phoneNumber;
@@ -65,4 +65,21 @@ public class AddressViewController {
 		this.message = message;
 	}
 
+	public AddressService getAddressService() {
+		return addressService;
+	}
+
+	public void setAddressService(AddressService addressService) {
+		this.addressService = addressService;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	
 }

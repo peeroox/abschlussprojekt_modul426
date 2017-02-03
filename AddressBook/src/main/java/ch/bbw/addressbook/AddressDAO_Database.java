@@ -33,7 +33,8 @@ public class AddressDAO_Database implements AddressDAO {
 			e.printStackTrace();
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
-		}		
+		}	
+		
 	}
 	@PreDestroy
 	private void destroy() {
